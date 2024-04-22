@@ -54,19 +54,19 @@ Data were accessed via the `fredr` package in R and interpolated to align differ
 The following scatter plots provide a visual representation of the relationship between each economic indicator and real estate prices, with regression lines indicating the trend:
 
 **Housing Starts (HOUST):**
-![Housing Starts vs. Real Estate Prices](/images/plot_HOUST.png)
+![Housing Starts vs. Real Estate Prices](images/plot_HOUST.png)
 *This scatter plot displays the relationship between housing starts and real estate prices, with the regression line suggesting a potential correlation between increased construction activity and higher property values.*
 
 **Mortgage Rates (MORTGAGE30US):**
-![Mortgage Rates vs. Real Estate Prices](/images/plot_MORTGAGE30US.png)
+![Mortgage Rates vs. Real Estate Prices](images/plot_MORTGAGE30US.png)
 *Here, we observe the inverse relationship between mortgage rates and real estate prices. The regression line indicates that as borrowing costs rise, there may be a downward pressure on home values.*
 
 **Unemployment Rate (UNRATE):**
-![Unemployment Rate vs. Real Estate Prices](/images/plot_UNRATE.png)
+![Unemployment Rate vs. Real Estate Prices](images/plot_UNRATE.png)
 *The scatter plot with the regression line reveals the anticipated negative association between unemployment rates and real estate prices, suggesting that higher unemployment could decrease home values.*
 
 **Economic Value (value):**
-![Economic Value vs. Real Estate Prices](/images/plot_value.png)
+![Economic Value vs. Real Estate Prices](images/plot_value.png)
 *This graph showcases the positive link between the economic value index and real estate prices, with the regression line pointing towards a boost in property values alongside economic growth.*
 
 ## Model Specification
@@ -108,19 +108,19 @@ The results of these diagnostic tests were as follows:
 Here are the diagnostic plots used for the assessment:
 
 **Linearity and Homoscedasticity:**
-![Linearity and Homoscedasticity](/images/Rplot.png)
+![Linearity and Homoscedasticity](images/Rplot.png)
 *This plot assesses the assumption of linearity between predictors and the outcome variable and homoscedasticity of residuals. Ideally, the residuals should be randomly distributed and have constant variance across fitted values.*
 
 **Q-Q Plot for Normality:**
-![Q-Q Plot](/images/Rplot01.png)
+![Q-Q Plot](images/Rplot01.png)
 *The Q-Q plot allows us to examine the normality of the residuals. Points following closely along the reference line suggest that the residuals are normally distributed—a key assumption for the validity of many statistical tests.*
 
 **Scale-Location Plot:**
-![Scale-Location Plot](/images/Rplot02.png)
+![Scale-Location Plot](images/Rplot02.png)
 *This graph is another tool for checking homoscedasticity. We're looking for a random scatter of points, indicating that residuals have constant variance across all levels of fitted values.*
 
 **Residuals vs Leverage:**
-![Residuals vs Leverage](/images/Rplot03.png)
+![Residuals vs Leverage](images/Rplot03.png)
 *This plot helps us to find influential cases that affect the regression model disproportionately. Points that stand out far from the pack could indicate outliers or influential data points warrant further investigation.*
 
 These diagnostic visuals suggest that the regression model is well-specified and that the assumptions of linear regression are reasonably met. However, some outliers and high-leverage points could influence the model's estimates, necessitating further investigation or robust regression techniques.
@@ -148,7 +148,7 @@ The predictive power of the model was evaluated by comparing predicted real esta
 
 The "Predicted vs Actual" plot visualizes this comparison:
 
-![Predicted vs Actual](/images/Rplot06.png)
+![Predicted vs Actual](images/Rplot06.png)
 *This plot is instrumental in assessing the accuracy of our model. The closer the points lie to the 45-degree line, the better our model's predictions match the actual values. Points deviating from the line suggest discrepancies between predicted and actual prices, highlighting areas where the model could be refined.*
 
 The congruence of the data points with the line of perfect prediction in the plot indicates the model's efficacy. While not perfect, as no model ever is, the consistency of the points along this line suggests that the model performs well in capturing the primary trends within the data.
